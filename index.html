@@ -5,14 +5,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="keywords" content="google clone, clon de google, copia de google">
+  <meta name="robots" content="index/follow">
+  <meta name="author" content="Josue Sanchez Nima">
+  <meta name="description" content="Copia de la página principal de Google">
+  <title>Google</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
+  <div class="container d-flx f-d-c">
+    <header id="header-container" class="d-flx">
+      <div class="header__content d-flx">
+        <nav class="menu d-flx">
+          <ul>
+            <li class="menu__item"><a href="./" class="menu__link">Gmail</a></li>
+            <li class="menu__item"><a href="./" class="menu__link">Imágenes</a></li>
+          </ul>
+        </nav>
+        <div class="google__options d-flx">
+          <figure class="products-icon p-r">
+            <img class="p-r" src="./icons/product.svg" alt="Productos de Google">
+          </figure>
+          <figure class="user-avatar p-r">
+            <img src="./img/avatar.png" alt="Perfil">
+          </figure>
+        </div>
+      </div>
+    </header>
+    <main class="primary-content d-flx f-d-c">
+      <section class="d-flx f-d-c">
+        <figure>
+          <img src="https://www.google.com.pe/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="Google">
+        </figure>
+        <div class="seach d-flx">
+          <figure>
+            <img src="./icons/search.svg" alt="search">
+          </figure>
+          <input type="text" name="search" id="search" />
+        </div>
+      </section>
+      <section class="d-flx">
+        <span>Ofrecido por Google en: </span><a href="./" alt="">Ingles</a>
+      </section>
+    </main>
+    <footer id="footer-container"></footer>
+  </div>
 </body>
 
 </html>
