@@ -1,5 +1,42 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  height: -webkit-fill-available;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.size-100p {
+  height: auto;
+  width: 100%;
+}
+
+.d-flx {
+  display: flex;
+}
+
+.f-d-c {
+  flex-direction: column;
+}
+
+#header-container {
+  justify-content: flex-end;
 }
