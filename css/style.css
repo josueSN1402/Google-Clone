@@ -109,7 +109,7 @@ input {
 }
 
 .google__options figure:hover::before {
-  background-color: #EFF0F0;
+  background-color: #eff0f0;
 }
 
 /* Ajustes a las etiquetas "figure" */
@@ -183,8 +183,33 @@ input {
 }
 
 /* Botones que están debajo de la barra de busqueda */
-.search .main-buttons {
+.main-buttons {
   margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 1.4rem;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 1.9rem;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  border: 1px solid #DADCE0;
+}
+
+.btn:focus,
+.btn:active {
+  border: 1px solid #4285F4;
 }
 
 /* Cambio de lenguaje */
