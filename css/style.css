@@ -8,6 +8,7 @@
 
 :root {
   --black: hsla(0, 0%, 0%, 0.87);
+  --white: hsl(0, 0%, 100%);
 }
 
 html {
@@ -149,6 +150,7 @@ input {
 
 .search input {
   color: var(--black);
+  background-color: var(--white);
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
@@ -159,7 +161,8 @@ input {
 
 .search input:hover,
 .search input:focus {
-  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+  box-shadow: 0 1px 6px hsla(225, 6%, 13%, 0.28);
+  border-color: rgba(223, 225, 229, 0);
 }
 
 #search:focus+.close-icon {
@@ -204,12 +207,14 @@ input {
 }
 
 .btn:hover {
-  border: 1px solid #DADCE0;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
 }
 
-.btn:focus,
-.btn:active {
-  border: 1px solid #4285F4;
+.btn:focus {
+  border: 1px solid #4285f4;
 }
 
 /* Cambio de lenguaje */
@@ -220,4 +225,8 @@ input {
 
 .change-lang a {
   padding-left: 5px;
+}
+
+#footer-container {
+  background: #f2f2f2;
 }
