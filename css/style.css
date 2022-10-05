@@ -35,10 +35,12 @@ figure {
   margin: 0;
 }
 
+/* Tipo de posición */
 .p-r {
   position: relative;
 }
 
+/* Tipo de display */
 .d-flx {
   display: flex;
 }
@@ -47,11 +49,13 @@ figure {
   flex-direction: column;
 }
 
+/* Header */
 #header-container {
   justify-content: flex-end;
   padding: .6rem;
 }
 
+/* Menu */
 .menu {
   align-items: center;
 }
@@ -66,6 +70,7 @@ figure {
   color: var(--black);
 }
 
+/* Últimas opciones del menú */
 .google__options figure {
   width: 40px;
   margin: .4rem;
@@ -78,6 +83,7 @@ figure {
   z-index: 1;
 }
 
+/* Circulo que aparece al hacer hover */
 .google__options figure::before {
   content: '';
   position: absolute;
@@ -98,6 +104,7 @@ figure {
   background-color: #EFF0F0;
 }
 
+/* Ajustes a las etiquetas "figure" */
 .google__options .products-icon {
   padding: 8px;
 }
@@ -107,12 +114,54 @@ figure {
   margin-right: .8rem;
 }
 
-.primary-content section {
+/* Secciones del main */
+.primary-content>section {
   justify-content: center;
   align-items: center;
+}
+
+.primary-content>section:first-child {
   margin-top: 4.5rem;
 }
 
+.seach-container {
+  /* padding: 2rem 0; */
+  align-items: center;
+}
+
+/* Barra de búsqueda */
 .seach {
-  padding: 2rem;
+  margin: 2rem;
+}
+
+.seach,
+.seach input {
+  width: 581px;
+  height: 44px;
+}
+
+.seach input {
+  width: 581px;
+  height: 44px;
+}
+
+.seach-icon {
+  height: 100%;
+}
+
+
+
+.main-buttons {
+  margin-bottom: 2rem;
+}
+
+
+/* Cambio de lenguaje */
+.change-lang {
+  color: #4d5156;
+  font-size: 1.3rem;
+}
+
+.change-lang a {
+  padding-left: 5px;
 }
