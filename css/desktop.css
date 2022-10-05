@@ -1,0 +1,12 @@
+.google-infor {
+  justify-content: space-between;
+}
+
+.google-infor {
+  padding: 0 15px;
+  order: unset;
+}
+
+.google-infor a {
+  font-size: 1.4rem;
+}

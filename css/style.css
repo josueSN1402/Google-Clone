@@ -258,10 +258,11 @@ input {
 }
 
 .google-infor {
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 0 15px;
   border-top: 1px solid #dadce0;
+  padding: 0 15px 10px;
+  order: 1;
 }
 
 .google-infor ul {
@@ -270,16 +271,16 @@ input {
 }
 
 .google-infor li {
-  padding: 15px;
+  padding: 10px 15px 10px 0;
 }
 
 .google-infor a {
   color: #70757a;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .divider {
   height: 40px;
   border-top: 1px solid #dadce0;
-  display: none;
+  display: block;
 }
