@@ -41,14 +41,20 @@
         <figure>
           <img src="https://www.google.com.pe/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
         </figure>
-        <div class="seach d-flx">
-          <figure>
-            <img src="./icons/search.svg" alt="search">
-          </figure>
-          <input type="text" name="search" id="search" />
-        </div>
+        <section class="seach-container d-flx f-d-c">
+          <div class="seach p-r d-flx">
+            <figure class="seach-icon">
+              <img src="./icons/search.svg" alt="search">
+            </figure>
+            <input type="text" name="search" id="search" />
+          </div>
+          <div class="buttons-container">
+            <input type="button" value="Buscar en Google" class="btn" />
+            <input type="submit" value="Voy a tener suerte" class="btn" />
+          </div>
+        </section>
       </section>
-      <section class="d-flx">
+      <section class="change-lang d-flx">
         <span>Ofrecido por Google en: </span><a href="./" alt="">Ingles</a>
       </section>
     </main>
