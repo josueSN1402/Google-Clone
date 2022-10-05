@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div class="container d-flx f-d-c">
+  <div class="container d-grd">
     <header id="header-container" class="d-flx">
       <div class="header__content d-flx">
         <nav class="menu d-flx">
@@ -40,10 +40,11 @@
     <main class="primary-content d-flx f-d-c">
       <section class="d-flx f-d-c">
         <figure>
-          <img src="https://www.google.com.pe/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+          <img class="google-logo"
+            src="https://www.google.com.pe/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
         </figure>
         <section class="search-container d-flx f-d-c">
-          <div class="search p-r d-flx">
+          <form class="search p-r d-flx">
             <figure class="search-icon p-a d-flx">
               <img src="./icons/search.svg" alt="search">
             </figure>
@@ -51,7 +52,7 @@
             <figure class="close-icon p-a d-flx">
               <img src="./icons/close.svg" alt="close">
             </figure>
-          </div>
+          </form>
           <div class="main-buttons">
             <input type="button" value="Buscar con Google" class="btn" />
             <input type="submit" value="Voy a tener suerte" class="btn" />
@@ -59,10 +60,28 @@
         </section>
       </section>
       <section class="change-lang d-flx">
-        <span>Ofrecido por Google en: </span><a href="./" alt="">Ingles</a>
+        <span>Ofrecido por Google en: </span><a href="#" alt="">Ingles</a>
       </section>
     </main>
-    <footer id="footer-container"></footer>
+    <footer id="footer-container" class="d-grd">
+      <section class="country">
+        <span>Perú</span>
+      </section>
+      <div class="divider"></div>
+      <section class="google-infor d-flx">
+        <ul class="d-flx">
+          <li><a href="./">Sobre Google</a></li>
+          <li><a href="./">Publicidad</a></li>
+          <li><a href="./">Negocios</a></li>
+          <li><a href="./">Cómo funciona la Búsqueda</a></li>
+        </ul>
+        <ul class="d-flx">
+          <li><a href="./">Privacidad</a></li>
+          <li><a href="./">Condiciones</a></li>
+          <li><a href="./">Preferencias</a></li>
+        </ul>
+      </section>
+    </footer>
   </div>
 </body>
 
