@@ -9,6 +9,7 @@
 :root {
   --black: hsla(0, 0%, 0%, 0.87);
   --white: hsl(0, 0%, 100%);
+  color-scheme: light dark;
 }
 
 html {
@@ -248,7 +249,7 @@ input {
 }
 
 #footer-container {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .country {
@@ -283,4 +284,62 @@ input {
   height: 40px;
   border-top: 1px solid #dadce0;
   display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+	background-color: #202124;
+  }
+  .search input {
+    color: var(--white);
+    background-color: #202124;
+    border: 1px solid #484b4f;
+  }
+  .search input:hover,
+  .search input:focus {
+    background-color: #303134;
+  }
+  .btn {
+    background-color: #303134;
+    border: 1px solid #303134;
+    color: #e8eaed;
+  }
+  .btn:hover,
+  .btn:focus {
+    background-color: #303134;
+    color: #e8eaed;
+    box-shadow: 0 1px 3px #1717173d;
+    border: 1px solid #5f6368;
+  }
+  .btn:hover {
+    box-shadow: 0 1px 3px #1717173d;
+  }
+  #footer-container {
+    background-color: #171717;
+  }
+  .divider {
+    border-top: 1px solid #313437;
+  }
+  .country {
+    color: #9aa0a6;
+  }
+  .google-infor a {
+    color: #9aa0a6;
+  }
+  .google-infor {
+    border-top: 1px solid #313437;
+  }
+  .change-lang {
+    color:#bdc1c6
+  }
+  .change-lang a {
+    color: #8ab4f8;
+  }
+  .google__options figure:hover::before,
+  .google__options figure:focus::before {
+    background-color: rgba(232,234,237,.10);
+  }
+  .menu__link {
+    color: var(--white);
+  }
 }
